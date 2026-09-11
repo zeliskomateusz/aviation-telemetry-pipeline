@@ -16,7 +16,7 @@ The pipeline processes data through three main layers (Bronze, Silver, Gold): 
 2. Silver (Cleaned Data): PySpark reads the JSON files, enforces schemas, cleans out invalid GPS/null values, and saves the data as optimized Parquet files.  
 3. Gold (Analytics Ready): dbt (SQL) builds analytical dimensions and fact tables, calculating safety risk flags and fleet metrics.  
 4. Visualization: Power BI connects to the Gold layer to display fleet status and risk insights.
-
+```
 [ OpenSky API ] 
        │
        ▼ (Python Script)
@@ -30,7 +30,7 @@ The pipeline processes data through three main layers (Bronze, Silver, Gold): 
        │
        ▼
 [ Power BI Dashboard ]
-
+```
 Tech Stack
 
  Languages: Python, SQL  
